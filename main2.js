@@ -1,14 +1,16 @@
 var check = $('#checkBtn');
 check.one('click',(function(){
- $('#result').append(function compare(){
- 	           var inputValue = $('#inp').val();
-	            if(inputValue==="Titanic" || inputValue==="titanic"){
-	         	return "Congratulation! Correct Answer!";
-	         }    
-	         return "Sorry,try again..." 
-            });
+ if($('#inp').val() === "Johnny English"){
 
-}));
+$('#result').text("Congratulation! Correct Answer!");
+
+ }
+
+ else if($('#inp').val()!=="Johnny English"){
+    $('#result').text("Sorry,try again..." )
+}
+
+});
 
 
 var trueResult = $('#resultBtn');
