@@ -2,7 +2,7 @@ var check = $('#checkBtn');
 check.one('click',(function(){
  $('#result').append(function compare(){
  	           var inputValue = $('#inp').val();
-	            if(inputValue==="Johnny English" || inputValue==="johnny english"){
+	            if(inputValue==="Titanic" || inputValue==="titanic"){
 	         	return "Congratulation! Correct Answer!";
 	         }    
 	         return "Sorry,try again..." 
@@ -12,9 +12,9 @@ check.one('click',(function(){
 
 
 var trueResult = $('#resultBtn');
-trueResult.one('click',(function(){
- $('#result').append("The true result is 'Johnny English'")
-}))
+trueResult.click(function(){
+ $('#result').append("The true result is 'Titanic'")
+})
 trueResult.click(function(){
  $('#result').css("color","red")
-});
+})
