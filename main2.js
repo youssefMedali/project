@@ -1,20 +1,22 @@
 var check = $('#checkBtn');
-check.one('click',(function(){
- $('#result').append(function compare(){
- 	           var inputValue = $('#inp').val();
-	            if(inputValue==="Titanic" || inputValue==="titanic"){
-	         	return "Congratulation! Correct Answer!";
-	         }    
-	         return "Sorry,try again..." 
-            });
+check.click(function(){
+ if($('#inp').val() === "Titanic" || $('#inp').val() === "titanic" ){
 
-}));
+$('#result').text("Congratulation! Correct Answer!");
+
+ }
+
+ else if($('#inp').val()!=="Titanic"){
+    $('#result').text("Sorry,try again..." )
+}
+
+});
 
 
 var trueResult = $('#resultBtn');
-trueResult.click(function(){
+trueResult.one('click',(function(){
  $('#result').append("The true result is 'Titanic'")
-})
+}))
 trueResult.click(function(){
  $('#result').css("color","red")
 })
