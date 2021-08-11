@@ -19,7 +19,7 @@ $('#result').css("text-indent", "30px")
 
 var trueResult = $('#resultBtn');
 trueResult.one('click',(function(){
-   $('#result').text("")
+	$('#result').text("")
  $('#result').append($("<p id='para'>The true result is 'Titanic'</p>"))
  $('#result').append('<img class="movieImg" src="https://fr.web.img2.acsta.net/pictures/19/10/25/11/18/5224976.jpg">');
  $('.movieImg').css({"width": "200px" , "position": "relative", "bottom": "10px", "left": "150px", "display": "block"});
