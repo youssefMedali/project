@@ -4,7 +4,7 @@ check.click(function(){
 
 $('#result').text("Congratulation! Correct Answer!");
 $('#result').append('<img class="movieImg" src="https://upload.wikimedia.org/wikipedia/en/a/a7/Happy_Death_Day_poster.png">');
-$('.movieImg').css({"width": "200px" , "position": "relative", "bottom": "-40px","left": "-40px" });
+$('.movieImg').css({"width": "200px" , "position": "relative", "bottom": "-40px","left": "-10px" });
 
  }
 
