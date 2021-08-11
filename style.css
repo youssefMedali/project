@@ -100,7 +100,7 @@ input {
 .next{
 	position: absolute;
 	bottom: 5px;
-	left:  45%;
+	left:  40%;
 	background-color: black;
     border: none;
     color: white;
@@ -123,6 +123,6 @@ input {
 	font-weight: bold;
 	color: green;
 	position: absolute;
-	bottom: 200px;
-	left: 20%;
+	bottom: 100px;
+	left: 10%;
 }
