@@ -6,7 +6,9 @@ $('#result').text("Congratulation! Correct Answer!");
 $('#result').append('<img class="movieImg" src="https://flxt.tmsimg.com/assets/p32279_p_v10_at.jpg">');
 
 $('.movieImg').css({"width": "200px" , "position": "relative", "bottom": "-20px" });;
-=======
+
+$('.movieImg').css({"width": "200px" , "position": "relative", "bottom": "-20px" });;
+
 $('.movieImg').css({"width": "200px" , "position": "relative", "top": "100px" });
 
  }
@@ -15,8 +17,8 @@ $('.movieImg').css({"width": "200px" , "position": "relative", "top": "100px" })
     $('#result').text("Sorry,try again..." )
 
     $('#result').css("text-indent", "150px")
-=======
 
+    $('#result').css("text-indent", "150px")
 }
 
 });
@@ -32,11 +34,11 @@ trueResult.one('click',(function(){
  $('#result').css({"color":"red","position": "relative", "left": "-30px", "top": "30px"});
 }))
 
- 
-=======
+
 trueResult.click(function(){
  $('#result').append("The true result is 'Titanic'")
 })
 trueResult.click(function(){
  $('#result').css("color","red")
 })
+
